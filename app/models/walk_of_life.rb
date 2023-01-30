@@ -1,0 +1,2 @@
+class WalkOfLife < ApplicationRecord
+end

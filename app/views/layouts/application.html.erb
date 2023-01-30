@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "stylesheet.css" %>
+
+  </head>
+
+  <body>
+    <nav class="navMenu">
+      <a href="/">Rodrigo Borges</a>
+      <a href="/projects">Portfolio</a>
+      <a href="/walk_of_life">Walk of Life</a>
+      <a href="/hobbies">Hobbies</a>
+      <%= link_to "CV", download_cv_path, class: "download-cv" %>
+      <div class="dot"></div>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>

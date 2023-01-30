@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @walk_of_life %>
+
+<div>
+  <%= link_to "Edit this walk of life", edit_walk_of_life_path(@walk_of_life) %> |
+  <%= link_to "Back to walk of lives", walk_of_lives_path %>
+
+  <%= button_to "Destroy this walk of life", @walk_of_life, method: :delete %>
+</div>

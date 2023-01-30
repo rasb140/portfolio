@@ -1,0 +1,17 @@
+<%= form_with(model: walk_of_life) do |form| %>
+  <% if walk_of_life.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(walk_of_life.errors.count, "error") %> prohibited this walk_of_life from being saved:</h2>
+
+      <ul>
+        <% walk_of_life.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

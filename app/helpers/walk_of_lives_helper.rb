@@ -1,0 +1,2 @@
+module WalkOfLivesHelper
+end
